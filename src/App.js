@@ -12,8 +12,8 @@ class App extends Component {
       const data = await user.json();
       var value1 = data.value;          
       value1 = value1.toLowerCase();    //set the string to lowercase to replace Chuck Norris with Rajni kant
-      value1 = value1.replace("chuck","Rajni");
-      value1 = value1.replace("norris","Kant");
+      value1 = value1.replace(/chuck/g,"Rajni");
+      value1 = value1.replace(/norris/g,"Kant");
       document.getElementById('demo').innerHTML = value1;   //set the joke in <p> with #demo
     }
      fetchUsers();                      //call fetchUsers()

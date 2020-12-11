@@ -25,7 +25,7 @@ class App extends Component {
   return (
     <div className="tc">
     <div className="container">         {/*to set the contents in center*/}
-      <div className='tc measure-narrow bg-light-green ttc dib br3 pa3 ma2 grow bw shadow-5'>
+      <div className='tc measure-narrow bg-light-green ttc dib br3 pa3 ma2 bw shadow-5'>
       <p className='f3 dark-blue fontChange'>Rajni Jokes</p>
       
       <Tilt className="Tilt" options={{ max : 50,easing:"cubic-bezier(.03,.98,.52,.99)" }} >  {/*It tilts the image on hover */}
